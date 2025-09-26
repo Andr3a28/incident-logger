@@ -1,8 +1,9 @@
 
 # Incident Logger
 
-[![CI](https://github.com/arthur-mhlanga/incident-logger/actions/workflows/ci.yml/badge.svg)](https://github.com/arthur-mhlanga/incident-logger/actions/workflows/ci.yml)
+[![CI](https://github.com/Andr3a28/incident-logger/actions/workflows/ci.yml/badge.svg)](https://github.com/Andr3a28/incident-logger/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 [![Made with Flask](https://img.shields.io/badge/Made%20with-Flask-blue)](https://flask.palletsprojects.com/)
 
 A role-based incident logging and review system built with **Flask + SQLAlchemy**. Supports granular privileges (e.g., `can_route`, `can_reviewer`, `can_view_settings`, `can_view_audit`), reviewer mapping, alerting for GM/SDM/IM, password policy enforcement, health checks, backup & restore, and an audit trail.
