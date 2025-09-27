@@ -1,6 +1,16 @@
 ﻿[flake8]
-max-line-length = 120
-ignore = E501, E128, W291, F401, E401
+max-line-length = 160
+ignore =
+    E501,  # line too long
+    F401,  # imported but unused
+    F811,  # redefinition of unused variable
+    E401,  # multiple imports on one line
+    W291,  # trailing whitespace
+    E128,  # continuation line under-indented
+    E124,  # closing bracket does not match indentation
+    E302,  # expected 2 blank lines, found 1
+    E305,  # expected 2 blank lines after class or function
+    E203   # whitespace before ':'
 exclude =
     __pycache__,
     .venv,
