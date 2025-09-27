@@ -17,3 +17,24 @@ instance/
 # OS
 .DS_Store
 Thumbs.db
+# local/runtime stuff
+
+!instance/.gitkeep
+!uploads/.gitkeep
+!backups/.gitkeep
+!build/.gitkeep
+!dist/.gitkeep
+!.vscode/.gitkeep
+instance/**
+uploads/**
+backups/**
+build/**
+dist/**
+.vscode/**
+
+!instance/.gitkeep
+!uploads/.gitkeep
+!backups/.gitkeep
+!build/.gitkeep
+!dist/.gitkeep
+!.vscode/.gitkeep
