@@ -1,19 +1,31 @@
 ﻿name: CI (minimal)
-on: [push, pull_request]
+
+on:
+  push:
+  pull_request:
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.11" }
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
       - name: Lint (flake8, non-blocking)
-        run: | 
-	  echo "Using .flake8 at repo root"
-	  flakes8 . --config=.flakes8 || true
+        run: |
+          echo "Using .flake8 at repo root"
+          flake8 . --config=.flake8 || true
+
       - name: Run placeholder test only
-        run: pytest -q tests/test_placeholder.py -vv
+        run: |
+          pytest -q tests/test_placeholder.py -vv
