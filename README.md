@@ -1,3 +1,7 @@
+[![CI](https://github.com/Andr3a28/incident-logger/actions/workflows/ci.yml/badge.svg)](https://github.com/Andr3a28/incident-logger/actions/workflows/ci.yml)
+
+# Incident Logger
+Flask-based incident logging and review system with RBAC, reviewer routing, alerts, and an admin health page.
 
 # Incident Logger
 
@@ -83,7 +87,7 @@ See **SECURITY.md** for reporting vulnerabilities. Avoid committing secrets. Use
 
 ---
 
-## 📹 Showcase (for recruiters)
+## 📹 Showcase 
 - **Screenshots**: add PNGs in `docs/screenshots/` and reference them below.
 - **Demo video**: upload to YouTube or attach a short MP4 in `docs/demo/`.
 - **Key features**: link timestamps (routing, alerts, health, password policy).
